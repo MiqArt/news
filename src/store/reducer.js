@@ -58,6 +58,7 @@ const reducer = createReducer(initialState, {
     };
   },
   [SET_USER]: (state, action) => {
+    localStorage.setItem("newsUser", JSON.stringify(action.user))
     return {
       ...state,
       currentUser: action.user
