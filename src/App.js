@@ -11,10 +11,11 @@ import { useDispatch } from 'react-redux';
 function App() {
   const dispatch = useDispatch()
   const currentUser = localStorage.getItem("newsUser");
+  
   if (currentUser) {
     dispatch({ type: SET_USER, user: JSON.parse(currentUser) });
   }
-  console.log(localStorage.getItem("newsUser"));
+
   return (
     <Router>
       <div className="App">
