@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #d8d8d8;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.approve-icon {
+  color: #00c129;
+  &:hover {
+    color: #128d2d;
+  }
+}
+
+.remove-icon {
+  color: #e90606;
+  &:hover {
+    color:#a11616;
+  }
+}
+
+.fullWidth {
+  width: 100% !important;
+}
