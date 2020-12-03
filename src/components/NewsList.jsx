@@ -91,7 +91,7 @@ const NewsList = ({ allNews, news, currentUser }) => {
               </div>
             )
           }) :
-          <span>Пустая лента :(</span>
+          <span className="news__list__emptyText">Пустая лента :(</span>
       }
     </div>
   );

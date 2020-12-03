@@ -1,3 +1,4 @@
+$text-color: #eeeeee;
 .news {
   padding-top: 130px;
   display: flex;
@@ -6,29 +7,34 @@
   &__search {
     position: relative;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: 100px;
     overflow: hidden;
-    box-shadow: 0 0 8px 0px #909090;
+    box-shadow: 1px 1px 4px 0 #000000;
     &__input {
       font-size: 18px;
       width: 100%;
       padding: 10px 40px;
       outline: none;
       border: none;
+      background-color: #5a5a5a;
+      color: $text-color;
+      &::placeholder {
+        color: #d6d6d6;
+      }
     }
     &__icon {
       position: absolute;
-      width: 30px;
-      height: 30px;
-      left: 5px;
+      width: 24px;
+      height: 24px;
+      left: 10px;
       top: 0;
       bottom: 0;
       margin: auto;
-      fill:#d1d1d8;
+      fill: $text-color;
       transition: fill .3s ease;
     }
     &:focus-within &__icon {
-      fill: black;
+      fill: #00c129
     }
   }
   &__form {
@@ -41,10 +47,12 @@
       border-radius: 7px;
       margin-bottom: 10px;
       padding: 10px;
-      box-shadow: 0 0 8px 0px #909090;
-    }
-    &__title {
-      resize: vertical;
+      color: $text-color;
+      background-color: #5a5a5a;
+      box-shadow: 1px 1px 4px 0 #000000;
+      &::placeholder {
+        color: #d6d6d6;
+      }
     }
     &__text {
       resize: vertical;
@@ -52,11 +60,11 @@
     &__btn {
       padding: 10px;
       border-radius: 7px;
-      box-shadow: 0 0 8px 0px #909090;
       font-size: 16px;
+      box-shadow: 1px 1px 4px 0 #000000;
       font-weight: bold;
       background-color:#00c129;
-      color: #fff;
+      color: $text-color;
       &:hover {
         background-color: #128d2d;
       }
@@ -64,6 +72,9 @@
   }
   &__list {
     width: 68%;
+    &__emptyText {
+      color: $text-color;
+    }
   }
   &__card {
     position: relative;
@@ -72,8 +83,9 @@
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 7px;
-    background-color:#fff;
-    box-shadow: 0 0 8px 0px #909090;
+    color: $text-color;
+    background-color: #242526;
+    box-shadow: 1px 1px 4px 0 #000000;
     &__title {
       font-size: 22px;
       font-weight: bold;
@@ -83,7 +95,7 @@
     }
     &__date {
       font-size: 14px;
-      color: #717171;
+      color: #a7a7a7;
     }
     &__btn-group {
       margin-top: 20px;

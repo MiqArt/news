@@ -26,7 +26,7 @@ const News = () => {
   return (
     <div className="news container">
       <div className="news__search fullWidth">
-        <input onChange={onHandleChange} className="news__search__input" type="text" name="search"/>
+        <input placeholder="Поиск" onChange={onHandleChange} className="news__search__input" type="text" name="search"/>
         <SearchIcon className="news__search__icon"/>
       </div>
       {currentUser.role === "user" && <NewsForm user={currentUser.login} />}
