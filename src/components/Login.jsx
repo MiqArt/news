@@ -35,7 +35,7 @@ const Login = ({ text }) => {
     e.preventDefault();
     const { login, password } = user;
     if(login && password) {
-      let findedUser = registeredUsers.find(el => el.login === user.login && el.password === user.password)
+      let findedUser = registeredUsers.find(el => el.login.toLowerCase() === user.login.toLowerCase() && el.password === user.password)
       if(findedUser) {
         dispatch({ type: SET_USER, user: {login: login, role: findedUser.role} });
         toast.success("Вход в учетную запись успешно выполнен.");
