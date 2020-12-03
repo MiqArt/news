@@ -50,6 +50,7 @@ const Login = ({ text }) => {
 
   const logout = () => {
     dispatch({ type: SET_USER, user: {login: "Гость", role: "guest"} });
+    localStorage.removeItem("newsUser");
     toast("Выход из учетной записи успешно выполнен")
   }
 
