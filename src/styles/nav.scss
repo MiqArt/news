@@ -14,17 +14,17 @@
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
     &-item {
       &:last-child {
         margin: 0;
         margin-left: auto !important;
       }
       margin-right: 20px;
-      color: #fff;
       font-size: 18px;
       font-weight: bold;
       &--link {
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         cursor: pointer;
         &:hover {
