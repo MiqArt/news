@@ -1,7 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import isEqual from 'react-fast-compare';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { ReactComponent as SearchIcon } from '../icons/search.svg';
 import { SEARCH_LIST } from '../store/actions';
 import NewsList from '../components/NewsList';
